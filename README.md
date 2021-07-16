@@ -112,7 +112,7 @@ At startup, and when running tests, PCMemTest responds to the following keys:
     * toggles scroll lock (stops/starts error message scrolling)
   * Enter
     * single message scroll (only when scroll lock enabled)
-  * Escape
+  * Escape/Backspace/F10
     * exits the test and reboots the machine
 
 Note that testing is stalled when scroll lock is enabled and the scroll region
