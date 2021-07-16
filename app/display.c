@@ -172,6 +172,7 @@ void check_input(void)
 {
     switch (get_key()) {
       case ESC:
+      case '0':
       case BACKSPACE:
         clear_message_area();
         display_notice("Rebooting...");
