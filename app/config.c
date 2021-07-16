@@ -222,7 +222,8 @@ static void test_selection_menu(void)
           case '5':
             changed = set_all_tests(true);
             break;
-          case ESC: {
+          case ESC:
+          case BACKSPACE: {
             clear_popup_row(POP_R+14);
             int num_selected = 0;
             for (int i = 0; i < NUM_TEST_PATTERNS; i++) {
@@ -291,6 +292,7 @@ static void address_range_menu(void)
             changed = true;
             break;
           case ESC:
+          case BACKSPACE:
             exit_menu = true;
             break;
           default:
@@ -331,6 +333,7 @@ static void cpu_mode_menu(void)
             printc(POP_R+3+cpu_mode, POP_C+2, '*');
             break;
           case ESC:
+          case BACKSPACE:
             exit_menu = true;
             break;
           default:
@@ -366,6 +369,7 @@ static void error_mode_menu(void)
             printc(POP_R+3+error_mode, POP_C+2, '*');
             break;
           case ESC:
+          case BACKSPACE:
             exit_menu = true;
             break;
           default:
@@ -461,6 +465,7 @@ static void cpu_selection_menu(void)
             changed = set_all_cpus(true);
             break;
           case ESC:
+          case BACKSPACE:
             clear_popup_row(POP_R+14);
             exit_menu = true;
             break;
@@ -563,6 +568,7 @@ void config_menu(bool initial)
             }
             break;
           case ESC:
+          case BACKSPACE:
             exit_menu = true;
             break;
           default:
@@ -595,6 +601,7 @@ void initial_config(void)
         usleep(1000);
         switch (get_key()) {
           case ESC:
+          case BACKSPACE:
             clear_message_area();
             display_notice("Rebooting...");
             reboot();

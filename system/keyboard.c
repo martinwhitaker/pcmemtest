@@ -15,6 +15,7 @@
 static const char keymap[] = {
     /* 0x00 */   0,
     /* 0x01 */ ESC,
+    /* 0x08 */ BACKSPACE,
     /* 0x02 */ '1',
     /* 0x03 */ '2',
     /* 0x04 */ '3',

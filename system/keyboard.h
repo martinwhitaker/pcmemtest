@@ -9,9 +9,14 @@
  */
 
 /*
- * The Escape character.
+ * Escape character code in ASCII is:
  */
-#define ESC     27
+#define ESC         27
+
+/*
+ * Backspace character code in ASCII is:
+ */
+#define BACKSPACE   8
 
 /*
  * Checks if a key has been pressed and returns the primary ASCII character
