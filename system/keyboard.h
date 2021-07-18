@@ -16,7 +16,7 @@
 /*
  * Backspace character code in ASCII is:
  */
-#define BACKSPACE   8
+#define BACKSPACE   '\b'
 
 /*
  * Checks if a key has been pressed and returns the primary ASCII character
