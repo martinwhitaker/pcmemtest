@@ -68,9 +68,9 @@ void display_init(void)
     set_background_colour(WHITE);
     clear_screen_region(0, 0, 0, 27);
 #if TESTWORD_WIDTH > 32
-    prints( 0, 0, "    PCMemTest-64  v1.4     ");
+    prints( 0, 0, "    PCMemTest-64  v1.4.1     ");
 #else
-    prints( 0, 0, "    PCMemTest-32  v1.4     ");
+    prints( 0, 0, "    PCMemTest-32  v1.4.1     ");
 #endif
     set_foreground_colour(WHITE);
     set_background_colour(BLUE);
@@ -172,6 +172,8 @@ void check_input(void)
 {
     switch (get_key()) {
       case ESC:
+      case '0':
+      case BACKSPACE:
         clear_message_area();
         display_notice("Rebooting...");
         reboot();

@@ -11,7 +11,8 @@
 // Private Variables
 //------------------------------------------------------------------------------
 
-// Convert set 1 scancodes to characters.
+// Convert set 1 scancodes to characters
+// see https://wiki.osdev.org/PS/2_Keyboard#Scan_Code_Set_1
 static const char keymap[] = {
     /* 0x00 */   0,
     /* 0x01 */ ESC,
