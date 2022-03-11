@@ -9,7 +9,7 @@
 #include "memsize.h"
 #include "pmem.h"
 
-#include "memory.h"
+#include "string.h"
 #include "unistd.h"
 #include "usb.h"
 
